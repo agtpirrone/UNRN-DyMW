@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+    #otroDIV, #granDIV {width: 100%;}
+    h1 {font-size: 10px;}
+    .box {width: 50%;height: 50%;}
+  }
 body{
     /* background-color:aliceblue; */
     background: radial-gradient(circle at center, aliceblue 50%, #d3e9fc 100%);
@@ -11,13 +17,12 @@ a{
 	text-decoration: none;
 }
 a:hover{
-    color: aliceblue;
     background-color: #9BF;
 }
 h1{
     margin-block-start: 0.2em;
     font-family: 'Caprasimo', cursive;
-    font-size: 5em;
+    font-size: 60px;
     background: -webkit-linear-gradient(#96b3d2, #3a72b8);
     background-clip: #fff;
     -webkit-background-clip: text;

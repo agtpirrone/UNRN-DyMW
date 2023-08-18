@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*    FIN RESET CSS      */
+
+
+body {
+	line-height: 1;
+	background-repeat: repeat-y;
+	background-position: center;
+	background: linear-gradient(red 10%,yellow 30%);
+	 }
+h2 { font-family: "Myriad Pro";
+	size: 18px; 
+	text-shadow: 5px 5px 5px rgb(0,0,0,.3); }
+
+p { font-family: Arial;
+	}
+
+a {color: lime;
+	text-decoration: none;	
+}	
+
+a:visited { color: #000; }
+
+a:hover { 
+	font-weight: bold;
+	text-decoration: underline; }
+
+div {padding: 0;
+	margin: 0;
+	border:0;}
+
+article {width: 30%;
+		float: left;
+		margin-left: 20px;
+		overflow: hidden;
+		}
+
+#gomma { 
+	width: 200px;
+	height: 200px;
+	position: absolute; 
+	left: 100px;
+	top: 100px;
+	background-color: #81a3db;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+	}
+
+header {background-color: darkcyan;
+	font-family: "Poplar STD";
+	font-size: 22PX;
+	color: #360b0b;
+	width: 100%;
+	height: 200px;
+	clear:both;
+	text-transform: uppercase;
+}
+
+header h1 {
+	float: left;
+	color: lime;
+}
+
+nav {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+nav li{
+	border-right: #000 1px solid;
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+}
+h1 
+{
+	font-family: Arial;
+	font-size: 48px;
+}
+
+h3 
+{
+	font-family: Arial;
+	font-size: 12px;
+	margin-top: 10px;
+	border-top: #aaa 2px solid;
+	padding-top: 5px;
+}
+
+#logo {
+	width: 120px;
+	height: 120px;
+	background-image: url(img/logo1.png);
+	margin-left: 10px;
+}
+
+#container {
+	background-color: #ebebeb;
+	width: 86%;
+	height: 100%;
+	position: 0px 0px;
+	top: 0px;
+	margin: auto;
+		}
+		
+footer {
+	height: 80px;
+	background-color: orange;
+	clear: both;
+	width: 100%;
+}
+menu {
+	color: #360b0b;
+	font-family: "Poplar STD";
+	font-size: 24pt;
+/*	height: 126px;*/
+	display: inline-block;
+	float: left;
+	margin-top: 70px;
+}
+
+#logo {width: 300px;
+		height: 126px;
+	display: inline-block;
+	float: left;}
+
+#parrago {font-size: 90px}
+
+#art-izq {
+
+}
+
+#art-mid {
+
+}
+
+#art-der {
+
+}
+
+.cont-art { margin-top: 20px;
+		overflow: hidden;
+
+}
+
+.cont-art p { margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 18px;
+
+}
+
+.text-art { font-family: "Myriad Pro";
+
+}
+
+.img-art { width: 100%;
+	height: 240px;
+	margin-bottom: 15px;
+	background-size: 100% 100%;
+
+}
+
+#img1 {
+	background-image: url(img/machu.jpg);
+	background-size: 100% 100%;
+}
+
+#img2 {
+		background-image: url(img/grol.jpg);
+		background-size: 100% 100%;
+}
+
