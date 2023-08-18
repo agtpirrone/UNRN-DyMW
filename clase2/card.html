@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agtpirrone: Tarea 2 \ Monty Inc. | Empleados del mes</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Noto+Sans&display=swap" rel="stylesheet">
+    <script>
+      function show() {
+        var x = document.getElementById("granDIV");
+        var y = document.getElementById("otroDIV"); 
+        if (x.style.display === "none") {
+          x.style.display = "block", y.style.display = "none";
+        } else {
+          x.style.display = "none", y.style.display = "block";
+        }
+      }
+      </script>
+  </head>
+<body>
+  <div id="otroDIV"><header><h1>Monty Inc.<br><span style="font-size:.6em">Empleados del mes!</h1> </header>
+  <main class="container">
+   <article class="box">
+    <img class="avatar2" src="img/guy.jpg" title="Cosme Fulanito" alt="avatar-usuario">
+    <p>Cosme Fulanito (Guy Incognito)</p>
+    <a class="link-bio" href="https://simpsons.fandom.com/wiki/Guy_Incognito" target="_blank" title="Guy Incognito">Link Bio (fandom)</a>
+  </article>
+   <article class="box">
+    <img class="avatar2" src="img/x.jpg" title="Sr. X" alt="avatar-usuario">
+    <p>Señor X (Mr. X)</p>
+    <a class="link-bio" href="https://simpsons.fandom.com/wiki/Mr._X" target="_blank" title="Mr. X">Link Bio (fandom)</a>
+  </article>
+  <article class="box">
+    <img class="avatar" src="img/snrub.jpg" title="Sr. Burns" alt="avatar-usuario">
+    <p class="text-ppal">El Señor Bolainas (Mr. Snrub)<br>
+    <span class="subtext"> Marzo de 1993</span></p>
+    <p><a class="link-bio" href="https://simpsons.fandom.com/wiki/Mr._Snrub" target="_blank" title="Sr. Snrub">Link Bio (fandom)</a></p>
+  </article>
+ </main>
+</div>
+ <footer id="footer"><p>Aca van recomendaciones. &copy; 2023 La vaca <button onclick="show()">un Boton</button></p></footer>
+<div id="granDIV" style="display: none;">
+  <header><h1>Agt Pirrone<br><span style="font-size:.6em">Tarea Clase 2</h1> </header>
+    <main class="container">
+     <article class="box">
+      <img class="avatar2" src="img/pacha.jpg" title="Pacha Horry" alt="avatar-usuario">
+      <p>Ken "Pacha" Horny</p>
+      <a class="link-bio" href="https://www.rionegro.com.ar/roca/norry-ya-esta-en-buenos-aires-y-evaluan-su-internacion-MF3896842/" target="_blank" title="El Facha Horry">Bio (básica)</a>
+    </article>
+     <article class="box">
+      <img class="avatar2" src="img/gringo.jpg" title="Gringo S." alt="avatar-usuario">
+      <p>Ken "Gringo" S.</p>
+      <a class="link-bio" href="https://www.generalroca.gov.ar/recordalo-asi/" target="_blank" title="Mr. Gringo S">Homenaje Virtual</a>
+    </article>
+    <article class="box">
+      <img class="avatar" src="img/agt.jpg" title="Foto Agt" alt="avatar-usuario">
+      <p class="text-ppal">Agt Pirrone<br>
+      <span class="subtext">Lic. en Marimbología</span></p>
+      <p><a class="link-bio" href="https://www.instagram.com/agtpirrone" target="_blank" title="Instagram Agt">Instagram</a></p>
+    </article>
+   </main>
+</div>
+</body>
+</html>
