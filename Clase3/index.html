@@ -5,24 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 3 En el princicpio...</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="snackbar.css" type="text/css">
+    <script>function myFunction() {
+        // Get the snackbar DIV
+        var x = document.getElementById("snackbar");
+      
+        // Add the "show" class to DIV
+        x.className = "show";
+      
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }</script>
 </head>
 <body>
-    <header><div id="logo">UNRN : Diseño y Maquetacion Web</div><nav><ul><li><a href="#pagina1">Seccion 1</a></li><li><a href="#pagina2">Seccion 2</a></li></ul></nav></header>
+    <header><span id="logo">UNRN : Diseño y Maquetacion Web</span><nav><ul><li><a href="#pagina1">Seccion 1</a></li><li><a href="#pagina2">Seccion 2</a></li></ul></nav></header>
     <section id="pagina1">
     <main class="container">
             
         <article>
-            <div class="avatar">#<img src="" title=""></div>
+            <div class="col-izq"><div class="avatar">#<img src="" title=""></div>
             <h1>Texto</h1><h4>Quien lo diria!</h4><p>Y un traveste del sonido<br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora sit unde accusantium inventore temporibus fugit placeat magnam explicabo alias corporis dolores esse, dignissimos nam. Tempora tenetur laboriosam reprehenderit optio perspiciatis!</p> 
-            <img src="img/horse.jpg" width="50%" title="Foto de la nota" alt="aca-iria-una-foto" class="foto-nota"></article>
+           <button class="link-boton" onclick="myFunction()"> Botonazo! </button></p>
+           <div id="snackbar">Se hace lo que se puede...</div>
+        </div> 
+        <div class="col-der"><img src="img/horse.jpg" title="Foto de la nota" alt="aca-iria-una-foto" class="foto-nota"></div></article>
     </main>
 </section>
 <section id="pagina2">
     <main class="container">
             
-        <article>
+        <article class="col-de3">
             <img src="" title="">
-            <h1>Texto</h1></article>
+            <h2>Un Chiste</h2>
+        <p>En un pais muy muy lejano, se encontraban dos pelados. Uno era separado el otro era su jefe...</p></article>
+        <article class="col-de3">
+                <img src="" title="">
+            <h2>Una noticia estremecedora</h2>
+        <p>En un acto de poca concurrencia y extrema sencillez, el rector de la Universidad sorteo las vacantes para el programa espacial Benito...</p></article>
+        <article class="col-de3">
+                 <img src="" title="">
+            <h2>La columna editorial</h2>
+        <p>Acaso no todos somos Eddy Grant? Pidiendo por justicia y paz. Es todo lo que aspira un ser del rastafraismo...</p></article>
     </main>
 </section>
 </body>

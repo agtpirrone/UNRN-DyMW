@@ -1,8 +1,8 @@
 @charset "UTF-8";
-/* Aca voy a poner un coso temporal */
-*{
+/* Aca voy a poner un coso temporal 
+.container, div, article, .avatar, h1, h2, h3, h4, p{
     border: 1px solid black;
-}
+}*/
 html {
     scroll-behavior: smooth;
 }
@@ -62,14 +62,19 @@ h4 {
 #pagina1, #pagina2 {
     height: 100vh;
 }
+#pagina1 {
+    background-color: antiquewhite;
+}
+#pagina2 {
+    background-color:rgb(242 220 209);
+}
 .container {
-    background: burlywood;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 90vw;
+    width: 80vw;
     height: 75vh;
     margin-top: 10vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
 }
 
 .avatar {
@@ -79,14 +84,70 @@ h4 {
     height: 100px;
     border-radius: 100%;
     text-align: center;
-    font-size: large;
+    font-size: 64px;
     margin-block-start: 50px;
+    line-height: 100px;
 }
-
+div + div {
+    margin-left: 20px;
+}
 article, aside {
-    width: 40%;
+    min-width: 25%;
     margin-top: 10vh;
+    display: flex;
+}
+article ~ article {
+    margin-left: 20px;
+}
+.col-izq, .col-der {
+    min-width: 45%;
 }
 .foto-nota {
-    float: left;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+    margin-top: 10px;
+    float: none;
+    max-width: 100%;
+    min-width: 100px;
+    height: 90%;
+    object-fit: cover;
+    object-position: 67%;
+}
+.col-de3 {
+    min-width: 28%;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    padding: 2%;
+}
+.col-de3 h2 {
+    height: 10vh;
+}
+.link-boton {
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    background-color: #616161;
+}
+.link-boton:hover {
+    background-color: red;
+    color: #ffffff;
 }
