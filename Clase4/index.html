@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario del goberino</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <section id="forma1">
+            <h1>Bienvenido a la Seguridad Social</h1>
+            <p class="txt-bienvenida">Ingrese sus datos y lo estaremos contactando para un jugoso bono de bienvenida.</p>
+            <!-- Formulario simple que enviará una petición POST -->
+            <form action="" method="post">
+            <fieldset>
+                    <fieldset>
+                    <legend>Datos principales (obligatorios)</legend>
+                    <label for="POST-name">Nombre:</label>
+                    <input id="POST-name" type="text" name="nombre" autofocus autocomplete="" required />
+                    <label for="POST-apellido">Apellido:</label>
+                    <input id="POST-apellido" type="text" name="apellido" />
+                    <label for="POST-email">DNI:</label>
+                    <input id="POST-email" type="number" name="dni" />
+                    </fieldset>
+               
+                <br>
+                <fieldset>
+                    <legend>Datos secundarios</legend>
+                    <label for="start">Nacimiento</label>
+                    <input type="date" id="start" name="trip-start" value="2023-09-04" min="2018-01-01" max="2024-12-31" />
+                    
+                        <fieldset>
+                            <legend>Genero</legend>
+                            <div>
+                                <input type="radio" id="f" name="genero" checked />
+                                <label for="f">Femenino</label> 
+                                <input type="radio" id="m" name="genero" />
+                                <label for="m">Masculino</label>
+                                <input type="radio" id="x" name="genero" />
+                                <label for="x">No Binario</label>
+                            </div>
+                        </fieldset><br>
+                        <b>Seleccione su medio de contacto de preferencia:<br></b>
+                        <input type="checkbox" id="mail" name="email"  />
+                        <label for="mail">E-Mail</label>
+                        <input type="checkbox" id="tel" name="telephone" />
+                        <label for="tel">Telefono</label>
+                        <br><label for="contact">Ingreselo aqui:</label>
+                        <input type="text" id="contact" name="data" />
+                    
+                </fieldset><br>
+                Seleccione una selfie linda:
+                <input type="file" id="fileInput" />
+<hr>
+                <div style="align-items: center;">
+            Finalmente, indiquenos por que desea formar parte<br>
+            <textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Escriba su mensaje aqui..."></textarea>
+                    <br>
+            <input style="margin-top: 1rem; padding: 1em;" type="submit" value="Enviar" />
+            
+            </fieldset>
+            </form>
+        </section>
+
+</body>
+
+</html>
