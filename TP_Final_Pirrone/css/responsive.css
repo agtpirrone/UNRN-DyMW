@@ -26,3 +26,11 @@ iframe {width: 80vh;}
     font-size: xx-large;
 }
 }
+
+@media  screen and (max-width: 576px) {
+    .item-pf {
+        font-size: x-large;
+    }
+    .navbar {background: darkolivegreen;}
+    #logo{  width: 10rem;}
+}

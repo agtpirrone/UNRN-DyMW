@@ -7,7 +7,8 @@
     margin: 0px;
 }
 :root {
-    --Brand-color: #2A373F;
+    --Brand-color: #1f3636;
+    --Link-color: #609488;
 }
 html {
     scroll-behavior: smooth;
@@ -44,7 +45,7 @@ h4{
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    background: #14191d;
+    background: var(--Brand-color);
     color: azure;
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5em;
@@ -69,7 +70,7 @@ h4{
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--Link-color)
   }
 
 a:hover {
@@ -120,7 +121,7 @@ a:hover {
     display: flex;
     align-items: flex-end;
 }
-#logo {width: 36rem;}
+#logo {width: 25rem;}
 #blog, #testimonio, #video{
     background-color: #EDEDED;;
     min-height: 100px;
@@ -134,7 +135,7 @@ a:hover {
 }
 #video {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -154,9 +155,8 @@ footer, #pre-footer {
 }
 
 .qr-afip img{
-    /* background-image: url('../img/rickroll-qrcode.webp'); */
     min-height: 20px;
-    max-height: 20vh;
+    max-height: 10vh;
     text-align: center;
 }
 #contacto {
@@ -178,4 +178,22 @@ input[type=text], select, textarea{
     box-sizing: border-box;
     resize: vertical;
   }
-  #blog article {min-height: 120px;}
+  #blog article {min-height: 120px;
+    margin-block-end: 2rem;}
+  .youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+  #video article { margin-inline-end: 6vw;min-width: 30vw;}
+
+  #testimonio {
+    display: flex;
+    flex-direction: row;
+    min-height: 80vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 6vh;
+}
+    #testimonio img {border-radius: 8px;}
+    #testimonio article{border-radius: 12px; background: #c1d1cb; padding: 1rem; min-width: 25vh;flex-grow: 1;
+    }
