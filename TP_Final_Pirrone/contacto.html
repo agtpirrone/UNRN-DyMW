@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Estudio Abogado</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/test.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+    <main>       
+    <nav class="navbar" id="mynavbar">
+        <div id="menu"><div id="logo"><a href="index.html">Jorge Abogado y Asociados</a></div>
+        
+                <a href="clientes.html">Clientes</a>
+                <a href="blog.html">Blog</a>
+                <a href="tutoriales.html">Tutoriales</a>
+                <a href="#contacto" active>Contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="hambur()">
+                <i class="fa fa-bars"></i>
+              </a></div>
+    </nav>
+
+            <section id="contacto" class="wide">
+                <div class="contacto-medio">
+                    <h2>Escribanos, sera respondido a la brevedad</h2><br>
+            <!-- Formulario simple que enviará una petición POST -->
+            <form action="mailto:carlitos@github.com" method="post">
+                <fieldset>
+                        <fieldset>
+                        <legend>Datos principales (obligatorios)</legend>
+                        <label for="POST-name">Nombre:</label>
+                        <input id="POST-name" type="text" name="nombre" autofocus autocomplete="" required /><br>
+                        <label for="POST-apellido">Apellido:</label>
+                        <input id="POST-apellido" type="text" name="apellido" required/>    
+                        </fieldset>
+                   
+                    <br>
+                    <fieldset>
+                            <b>Seleccione su medio de contacto de preferencia:<br></b>
+                            <input type="radio" id="mail" name="data"  />
+                            <label for="mail">E-Mail</label>
+                            <input type="radio" id="tel" name="data" />
+                            <label for="tel">Telefono</label>
+                            <br><label for="contact">Ingreselo:</label>
+                            <input type="text" id="contact" name="data" required/>
+                        
+                    </fieldset>
+    <hr>
+                    <div style="align-items: center;">  
+                Mensaje:<br>
+                <textarea id="mensaje" name="mensaje" rows="6" cols="50" width="70%" placeholder="Escriba su mensaje aqui..."></textarea>
+                        <br>
+                <input style="margin-top: 1rem; padding: 1em;" type="submit" value="Enviar" />
+                
+                </fieldset>
+                </form>
+            </div>
+            <div class="contacto-medio"><h2>Nuestra Ubicacion</h2><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8333.29751980685!2d-67.53948006892038!3d-39.02584187070863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a0331afc872af%3A0x613090e834b91508!2sDepto%20roca!5e0!3m2!1sen!2sar!4v1699659775051!5m2!1sen!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </section>
+        <section id="pre-footer" class="wide">
+            <div class="item-pf"><h3>Links de interes</h3>
+            <ul>
+                <li><a href="#"> Link 1</a></li>
+                <li><a href="#"> Link 2</a></li>
+                <li><a href="#"> Link 3</a></li>
+            </ul></div>
+            <div class="item-pf"><h3>Links de sinteres</h3>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">El estudio</a></li>
+                <li><a href="#">Valor del IUS</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="#">Trabajos</a></li>
+            </ul></div>
+            <div class="qr-afip item-pf"><img src="img/rickroll-qrcode.webp" title="QR de la Afip" alt="qr-afip"><br> QR de la AFIP</div>
+        </section>
+        <footer class="wide">
+            Copyright 2023 - Estudio de Abogados Jorge Abogado y Asociados. Quedan reservados todos los derechos. Y si uste' planea robarse algo de este sitio, sera perseuido con todo el rigor de la ley.
+        </footer>
+    </main>
+        <script src="js/nav.js"></script>
+        <script src="js/carousel.js"></script>
+</body>
+</html>

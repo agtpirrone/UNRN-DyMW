@@ -6,19 +6,20 @@
     <title>Jorge Estudio Abogado</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/test.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>            
-        <nav class="navbar">
-                <div id="logo"><a href="#">Jorge Abogado y Asociados</a></div>
-                <div id="menu">
-                    <ul>
-                        <li><a href="#testimonio">Clientes</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#video">Tutoriales</a></li>
-                        <li><a href="#pre-footer">Contacto</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar" id="mynavbar">
+                <div id="menu"><div id="logo"><a href="#">Jorge Abogado y Asociados</a></div>
+                
+                        <a href="#testimonio">Clientes</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#video">Tutoriales</a>
+                        <a href="contacto.html">Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="hambur()">
+                        <i class="fa fa-bars"></i>
+                      </a></div>
             </nav>
         <header class="wide">
 
@@ -109,46 +110,31 @@
         <section id="video">
             <h2 class="titulo-seccion">tutorial súper útil</h2><br>
             <p><iframe width="560" height="315" src="https://www.youtube.com/embed/PVGUVaksBok?si=GGIpZGIlsapCteaT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-        <a href="#" >ver mas...</a>    
+        <a href="tutoriales.html" >ver mas...</a>    
         </section>
         <section id="pre-footer" class="wide">
             <div class="item-pf"><h3>Links de interes</h3>
             <ul>
-                <li><a href="#"> Link 1</a></li>
-                <li><a href="#"> Link 2</a></li>
-                <li><a href="#"> Link 3</a></li>
+                <li><a href="https://www.google.com"> Google</a></li>
+                <li><a href="https://www.instagram.com/elestudio"> Instagram</a></li>
+                <li><a href="https://agencia.rionegro.gov.ar"> agencia de recaudacion</a></li>
+                <li><a href="https://www.aboroca.org.ar"> Colegio de Abogados</a></li>
             </ul></div>
             <div class="item-pf"><h3>Links de sinteres</h3>
             <ul>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#">El estudio</a></li>
+                <li><a href="contacto.html">El estudio</a></li>
                 <li><a href="#">Valor del IUS</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Trabajos</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="tutoriales.html">Trabajos</a></li>
             </ul></div>
-            <div class="qr-afip item-pf"><img src="img/rickroll-qrcode.webp" title="QR de la Afip" alt="qr-afip"><br> QR de la AFIP</div>
+            <div class="qr-afip item-pf"><img src="img/data-fiscal.jpg" title="QR de la Afip" alt="qr-afip"><br> QR de la AFIP</div>
         </section>
         <footer class="wide">
             Copyright 2023 - Estudio de Abogados Jorge Abogado y Asociados. Quedan reservados todos los derechos. Y si uste' planea robarse algo de este sitio, sera perseuido con todo el rigor de la ley.
         </footer>
     </main>
-    <script>
-        const productContainers = [...document.querySelectorAll('.test-container')];
-        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-        const preBtn = [...document.querySelectorAll('.pre-btn')];
-
-        productContainers.forEach((item, i) => {
-            let containerDimensions = item.getBoundingClientRect();
-            let containerWidth = containerDimensions.width;
-
-            nxtBtn[i].addEventListener('click', () => {
-                item.scrollLeft += containerWidth;
-            })
-
-            preBtn[i].addEventListener('click', () => {
-                item.scrollLeft -= containerWidth;
-            })
-        })
-        </script>
+    <script src="js/nav.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
