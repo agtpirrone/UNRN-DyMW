@@ -2,6 +2,8 @@
 @media  screen and (min-width: 769px) {
     body{background-color: white;color: rgb(70, 70, 70);}
     .navbar{height: 6vh;}
+    .hero-title{   font-size: 6rem;
+        height: 10.625rem;}
 }
 @media  screen and (max-width: 768px) {
  h2{font-size: 2em;}
@@ -25,6 +27,8 @@ iframe {width: 80vh;}
 .item-pf {
     font-size: xx-large;
 }
+.hero-title{font-size: 5rem;
+    height: 8rem;}
 }
 
 @media  screen and (max-width: 576px) {
@@ -33,4 +37,5 @@ iframe {width: 80vh;}
     }
     .navbar {background: darkolivegreen;}
     #logo{  width: 10rem;}
+    .hero-title{font-size: 4rem;height: 6rem;}
 }
