@@ -1,11 +1,11 @@
 @charset "UTF-8";
-@media  screen and (min-width: 769px) {
+@media  screen and (min-width: 769px), (min-height: 400px) {
     body{background-color: white;color: rgb(70, 70, 70);}
     .navbar{height: 6vh;}
     .hero-title{   font-size: 6rem;
         height: 10.625rem;}
 }
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 768px), (max-height:399px) {
  h2{font-size: 2em;}
 #menu, #pre-footer {align-items: center !important;} 
 .navbar{position: relative !important; align-items: stretch;}
